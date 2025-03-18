@@ -5,7 +5,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - 'index.php'
+      - 'merge.php'
   schedule:
     - cron: '0 */1 * * *'  # Runs every 1 hrs for news
   # Allows you to run this workflow manually from the Actions tab
@@ -46,7 +46,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Run news
-        run: php index.php
+        run: php merge.php
 
       - name: Commit files
         run: |
