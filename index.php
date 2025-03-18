@@ -128,4 +128,4 @@ $rss1 .= '</article></div>';
 
 $template = file_get_contents('indexbase.html');
 $html = str_replace('<!-- posts here -->', $rss1, $template);
-file_put_contents('public/index.html', $html);
+file_put_contents('site/index.html', $html);
