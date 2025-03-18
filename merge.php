@@ -58,6 +58,6 @@ foreach ($items as $item) {
 $html_content .= "</body></html>";
 
 // Save to file
-file_put_contents('results.html', $html_content);
+file_put_contents('public/index.html', $html_content);
 
-echo "Results saved to <a href='/site/results.html'>results.html</a>";
+echo "Results saved to <a href='index.html'>results.html</a>";
